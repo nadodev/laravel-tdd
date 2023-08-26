@@ -20,5 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: composer install --ignore-platform-reqs
+      - name: context docker
+        run: docker-compose up -d
+      - name: enter docker
+        run: docker-compose exec app bash
       - name: Run testes
         run: composer test
