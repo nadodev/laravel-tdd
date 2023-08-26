@@ -10,6 +10,6 @@ class Exemple
     }
 
     public function teste(){
-        echo 'teste';
+        echo 'teste 2';
     }
 }
