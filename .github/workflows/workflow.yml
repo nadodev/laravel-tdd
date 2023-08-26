@@ -23,6 +23,6 @@ jobs:
       - name: context docker
         run: docker-compose up -d
       - name: enter docker
-        run: docker-compose exec app bash
+        run: docker-compose exec -t app bash
       - name: Run testes
         run: composer test
